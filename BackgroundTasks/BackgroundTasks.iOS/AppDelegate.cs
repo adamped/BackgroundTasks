@@ -24,8 +24,17 @@ namespace BackgroundTasks.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            UIApplication.SharedApplication.SetMinimumBackgroundFetchInterval(UIApplication.BackgroundFetchIntervalMinimum);
             return base.FinishedLaunching(app, options);
+        }
+
+        public override void PerformFetch(UIApplication application, Action<UIBackgroundFetchResult> completionHandler)
+        {
+            // Check for new data, and display it
+
+
+            // Inform system of fetch results
+            completionHandler(UIBackgroundFetchResult.NewData);
         }
     }
 }

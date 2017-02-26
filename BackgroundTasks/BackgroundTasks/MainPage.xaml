@@ -5,6 +5,7 @@
              x:Class="BackgroundTasks.MainPage">
 
 	<Label Text="Welcome to Xamarin Forms!" 
+           x:Name="BackgroundServiceLabel"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 

@@ -152,6 +152,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\UWPRuntimeComponent\UWPRuntimeComponent.csproj">
+      <Project>{037ee6d7-134d-4b9c-b897-94c11a084825}</Project>
+      <Name>UWPRuntimeComponent</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BackgroundTasks\BackgroundTasks.csproj">
       <Project>{cd68b73c-a57d-4136-9376-9d1d51bca711}</Project>
       <Name>BackgroundTasks</Name>
